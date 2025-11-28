@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Projeto</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #e3f0ff 0%, #b3d1ff 100%);
+            color: #003366;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(0, 85, 204, 0.15);
+            padding: 40px 32px;
+            max-width: 700px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            background: linear-gradient(90deg, #0055cc, #3a8dde);
+            color: #fff;
+            padding: 18px 0;
+            border-radius: 12px;
+            margin-bottom: 24px;
+            font-size: 2.2rem;
+            box-shadow: 0 2px 8px rgba(0,85,204,0.08);
+        }
+        h2 {
+            color: #0055cc;
+            margin-top: 24px;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        h3 {
+            color: #003366;
+            margin: 10px 0 18px 0;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+        button {
+            background: linear-gradient(90deg, #0055cc 60%, #3a8dde 100%);
+            color: #fff;
+            border: none;
+            padding: 14px 36px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            margin-top: 32px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 8px rgba(0,85,204,0.10);
+            transition: background 0.2s, transform 0.2s;
+        }
+        button:hover {
+            background: linear-gradient(90deg, #003366 60%, #0055cc 100%);
+            transform: scale(1.05);
+        }
+        @media (max-width: 800px) {
+            .container {
+                padding: 24px 8px;
+            }
+            h1 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bem Vindos ao nosso mini projeto de cadastro da nossa lista para cadastrar alunos</h1>
+        <h2>Conteúdo:</h2>
+        <h3>Aqui criamos uma API para cadastrar pessoas e alunos a fim de estudos e aprendizado para o nodeJS</h3>
+        <h2>Desafios Ao ocorrer desse mini projeto:</h2>
+        <h3>Ao ocorrer do projeto ocorreu diversos erros e fatores mas que absorvemos como aprendizado.</h3>
+        <h3>Um deles foi o erro 500 que deu muita dor de cabeça sinceramente e não conseguia resolver, principalmente por que estava dando erro interno e no fetch onde estava retornando o objeto no nosso arquivo que comunicamos o front e o back-end0 </h3>
+        <h3>Mas com a ajuda da professora conseguimos identificar o erro e o erro era que o fetch estava retornando um objeto sendo que ele precisava de um array para o servidor conseguir identificar os parametros da tabela</h3>
+        <h3>Outro erro ocorrido foi no model que usei um mesmo metodo dele enviar um objeto mas tambem precisava de um array para mandar os alunos cadastrados, então eu exclui o metodo que ele mandava um objeto para um metodo que ele retornasse um array e deu supeeerrrr certo</h3>
+        <button id="ir-index">Ir para Cadastro de Alunos</button>
+    </div>
+    <script>
+        document.getElementById('ir-index').onclick = function() {
+            window.location.href = 'index.html';
+        };
+    </script>
+</body>
+</html>
